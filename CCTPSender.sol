@@ -3,7 +3,7 @@ pragma solidity ^0.8.19;
 
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
-import {ICircleCaller} from "./ICircleMessenger.sol";
+import {ICircleCaller} from "ChrysalisCCTP/Interfaces/ICircleMessenger.sol";
 
 contract CustomBurnContract {
     using SafeERC20 for IERC20;
@@ -38,7 +38,6 @@ contract CustomBurnContract {
         erc20Token.safeTransferFrom(msg.sender, address(this), amount);
         erc20Token.approve(address(circleBridge), amount);
 
-        // ✅ Emit the event
         emit DepositForBurn(
             msg.sender,
             amount,
