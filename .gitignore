@@ -1,15 +1,31 @@
-# Remix compiler artifacts
-**/artifacts/
-**/artifacts/**
+# Build artifacts
+build/
+dist/
+*.abi
+*.bin
 
-# Remix plugin state folders
-deps/
-states/
+# Dependencies
+node_modules/
+yarn.lock
+package-lock.json
 
-# Debug info
-*.dbg.json
-*.tsbuildinfo
-
-# Optional
+# Environment variables
 .env
 .env.local
+.env.development
+.env.production
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Debug logs
+*.log
+debug/
+coverage/
+
+# OS specific
+.DS_Store
+Thumbs.db

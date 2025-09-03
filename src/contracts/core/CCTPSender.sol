@@ -9,8 +9,7 @@ contract CustomBurnContract {
     using SafeERC20 for IERC20;
 
     ICircleCaller public immutable circleBridge;
-
-    // ✅ Define event
+    
     event DepositForBurn(
         address indexed sender,
         uint256 amount,

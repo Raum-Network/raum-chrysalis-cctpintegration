@@ -97,3 +97,4 @@ Full unit tests and mainnet fork tests will be introduced in later phases.
 - Integrate **ERC-4337 Paymaster** to cover user gas fees for sending CCTP messages  
 - Add support for **multiple DeFi protocols** via strategy pattern  
 - Build a **dashboard and subgraph** for user activity tracking
+- Test Cases for **Core Contracts** for easy local testing
